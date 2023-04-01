@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+:root {
+  --radius: 0.85rem;
+  --clr-soft-blue: hsl(215, 51%, 70%);
+  --clr-cyan: hsl(178, 100%, 50%);
+  --clr-main-bg: hsl(217, 54%, 11%);
+  --clr-card-bg: hsl(216, 50%, 16%);
+  --clr-line: hsl(215, 32%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--clr-main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background-color: var(--clr-card-bg);
+  width: 23rem;
+  height: auto;
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  box-shadow: 12px 12px 18px rgb(0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card-img {
+  border-radius: var(--radius);
+}
+.card-title {
+  color: var(--clr-white);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.card-title:hover {
+  color: var(--clr-cyan);
+  cursor: pointer;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: var(--clr-soft-blue);
+  opacity: 0.6;
+}
+
+.card-details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-left-container,
+.details-right-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.details-left-text {
+  color: var(--clr-cyan);
+  font-weight: 600;
+}
+
+.details-right-text {
+  color: var(--clr-soft-blue);
+  opacity: 0.75;
+}
+
+.card-divider {
+  border: 1px solid var(--clr-line);
+}
+
+.card-avatar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar-img-container {
+  width: 2rem;
+}
+.avatar-img {
+  border: 2px solid var(--clr-white);
+  border-radius: 50%;
+}
+
+.avatar-text {
+  color: var(--clr-soft-blue);
+  opacity: 0.75;
+}
+
+.text-white {
+  color: var(--clr-white);
+}
+
+.text-white:hover {
+  color: var(--clr-cyan);
+  cursor: pointer;
+}
